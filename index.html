@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding RSVP 2</title>
+    <title>Wedding RSVP</title>
 </head>
 <body>
 
@@ -13,32 +13,8 @@
     <p class="subtitle">Please confirm your attendance</p>
     <div class="divider"></div>
     
-    <div id="search-section">
-        <p style="color: #8c7a6b; margin-bottom: 15px; font-size: 15px;">
-            Enter your full name as it appears on your invitation
-        </p>
-        <input type="text" id="guest-name" list="guest-names-list" placeholder="Start typing your name... e.g., Uncle John">
-        <datalist id="guest-names-list"></datalist>
-
-        <button id="btn-search" class="btn-primary">
-            <span class="search-icon">🔍</span> Find My Invitation
-        </button>
-    </div>
-
-    <div id="security-section" class="hidden">
-        <div class="guest-name-display" id="security-title">Security Check</div>
-        <p id="security-instructions" style="color: #8c7a6b; font-size: 14px; margin-bottom: 15px;"></p>
-        
-        <div id="whatsapp-link-container" style="margin-bottom: 20px;"></div>
-        
-        <input type="password" id="security-pin" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="Enter 4-digit PIN" style="text-align: center; font-size: 20px; letter-spacing: 5px;">
-        
-        <button id="btn-verify-pin" class="btn-primary" style="margin-top: 15px;">Confirm & Proceed</button>
-        <button id="btn-security-back" class="btn-secondary" style="font-size: 13px; padding: 8px;">↻ Back to Search</button>
-    </div>
-    
     <div id="rsvp-section" class="hidden">
-        <div class="guest-name-display" id="welcome-text">Welcome!</div>
+        <div class="guest-name-display" id="welcome-text">👋 Welcome!</div>
         <div id="status-badge-container"></div>
         
         <p style="color: #8c7a6b; margin: 15px 0 5px 0; font-size: 14px;">
@@ -53,21 +29,18 @@
         </div>
         
         <p id="seat-warning" style="color: #a89a8d; font-size: 13px; margin-bottom: 15px; min-height: 18px;">
-            You can decrease your seats or increase them back to your maximum allowed limit.
+            Allowed maximum: -- seats.
         </p>
         
         <div class="button-group">
             <button id="btn-accept" class="btn-accept">✅ Accept</button>
             <button id="btn-decline" class="btn-decline">✖ Decline</button>
         </div>
-        
-        <button id="btn-reset" class="btn-secondary" style="margin-top: 10px; font-size: 13px; padding: 8px;">
-            ↻ Search for another guest
-        </button>
     </div>
 
     <div id="message">Loading invitees data...</div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
