@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding RSVP 2</title>
+</head>
+<body>
+
+<div class="rsvp-card">
+    <h2>💍 Wedding RSVP</h2>
+    <p class="subtitle">Please confirm your attendance</p>
+    <div class="divider"></div>
+    
+    <!-- SEARCH SECTION -->
+    <div id="search-section">
+        <p style="color: #8c7a6b; margin-bottom: 15px; font-size: 15px;">
+            Enter your full name as it appears on your invitation
+        </p>
+        <input type="text" id="guest-name" placeholder="e.g., Uncle John">
+        <button id="btn-search" class="btn-primary">
+            <span class="search-icon">🔍</span> Find My Invitation
+        </button>
+    </div>
+
+    <!-- RSVP SECTION -->
+    <div id="rsvp-section" class="hidden">
+        <div class="guest-name-display" id="welcome-text">Welcome!</div>
+        <div id="status-badge-container"></div>
+        
+        <p style="color: #8c7a6b; margin: 15px 0 5px 0; font-size: 14px;">
+            Reserve Your Seats
+        </p>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin: 10px 0;">
+            <button id="btn-decrease-seat" class="btn-secondary" style="width: 45px; height: 45px; border-radius: 50%; font-size: 20px; padding: 0; line-height: 41px; margin: 0;">-</button>
+            <div id="seat-count" class="seat-highlight" style="margin: 0; min-width: 120px;">
+                <span id="seat-number">1</span> Seats
+            </div>
+            <button id="btn-increase-seat" class="btn-secondary" style="width: 45px; height: 45px; border-radius: 50%; font-size: 20px; padding: 0; line-height: 41px; margin: 0;">+</button>
+        </div>
+        
+        <p id="seat-warning" style="color: #a89a8d; font-size: 13px; margin-bottom: 15px; min-height: 18px;">
+            You can decrease your seats or increase them back to your maximum allowed limit.
+        </p>
+        
+        <div class="button-group">
+            <button id="btn-accept" class="btn-accept">✅ Accept</button>
+            <button id="btn-decline" class="btn-decline">✖ Decline</button>
+        </div>
+        
+        <button id="btn-reset" class="btn-secondary" style="margin-top: 10px; font-size: 13px; padding: 8px;">
+            ↻ Search for another guest
+        </button>
+    </div>
+
+    <div id="message">Enter your name to begin</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
